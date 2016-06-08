@@ -1,9 +1,9 @@
 ﻿using System;
 namespace DesignPatterns
 {
-    public class UsePattern
+    public class UseAbstractFactoryPattern
     {
-        public void PrintInformation ()
+        public void Run ()
         {
             var printer = new ComponentInformationPrinter (new Type1Factory ());
             printer.PrintInformation ();

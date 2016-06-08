@@ -24,6 +24,4 @@ let printInformation componentFactory =
     printfn "%d" (getType componentInst)
     printfn "%s" (getCategory componentInst)
 
-let usePattern = { Component = Type1Component }
-
-do printInformation usePattern
+do printInformation { Component = Type1Component }
