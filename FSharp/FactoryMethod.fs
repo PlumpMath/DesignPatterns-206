@@ -4,11 +4,6 @@ type Component =
     | Type1Component
     | Type2Component
 
-type ComponentFactory = 
-    { Component : Component }
-
-let getComponent (componentFactory : ComponentFactory) = componentFactory.Component
-
 let getType = 
     function 
     | Type1Component -> 1
