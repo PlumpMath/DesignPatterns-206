@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="AbstractFactory.fs" />
+    <Compile Include="Builder.fs" />
+    <Compile Include="FactoryMethod.fs" />
+    <Compile Include="Singleotn.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
 </Project>

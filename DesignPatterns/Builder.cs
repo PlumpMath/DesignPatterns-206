@@ -9,9 +9,7 @@ namespace DesignPatterns
 
             var builder = new YellowItemBuilder ();
 
-            director.Construct (builder);
-
-            var builtItem = builder.GetItem ();
+            var builtItem = director.Construct (builder);
 
             builtItem.ShowParts ();
         }
@@ -19,10 +17,11 @@ namespace DesignPatterns
 
     public class ItemDirector
     {
-        public void Construct (ItemBuilder builder)
+        public Item Construct (ItemBuilder builder)
         {
             builder.BuildFirstPart ();
             builder.BuildSecondPart ();
+            return builder.GetItem ();
         }
     }
 
